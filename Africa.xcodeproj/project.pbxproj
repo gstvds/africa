@@ -82,8 +82,7 @@
 			children = (
 				4187CB9326D9BCC1000745EE /* Data */,
 				4187CB7E26D9BC80000745EE /* Video */,
-				4187CB6F26D9BB1E000745EE /* AfricaApp.swift */,
-				4187CB7126D9BB1E000745EE /* ContentView.swift */,
+				4187CB9C26D9BE3D000745EE /* App */,
 				4187CB7326D9BB1F000745EE /* Assets.xcassets */,
 				4187CB7826D9BB1F000745EE /* Info.plist */,
 				4187CB7526D9BB1F000745EE /* Preview Content */,
@@ -125,6 +124,15 @@
 				4187CB9526D9BCCC000745EE /* videos.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		4187CB9C26D9BE3D000745EE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4187CB6F26D9BB1E000745EE /* AfricaApp.swift */,
+				4187CB7126D9BB1E000745EE /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
