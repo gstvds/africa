@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VideoListView: View {
     // MARK: - Properties
-    var videos: [Video] = Bundle.main.decode("videos.json")
+    @State var videos: [Video] = Bundle.main.decode("videos.json")
     
     // MARK: - Body
     var body: some View {
@@ -22,6 +22,15 @@ struct VideoListView: View {
             } //: List
             .listStyle(InsetGroupedListStyle())
             .navigationBarTitle("Videos", displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        videos.shuffle()
+                    }) {
+                        Image(systemName: "arrow.2.squarepath")
+                    } //: Button
+                } //: ToolbarItem
+            } //: toolbar
         } //: NavigationView
     }
 }
