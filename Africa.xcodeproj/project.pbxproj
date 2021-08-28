@@ -33,6 +33,7 @@
 		4187CBAA26D9C195000745EE /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187CBA926D9C195000745EE /* CoverImageModel.swift */; };
 		4187CBAD26D9C294000745EE /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187CBAC26D9C294000745EE /* CodableBundleExtension.swift */; };
 		4187CBAF26D9C62A000745EE /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187CBAE26D9C62A000745EE /* AnimalListItemView.swift */; };
+		4187CBB126D9C733000745EE /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4187CBB026D9C733000745EE /* AnimalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		4187CBA926D9C195000745EE /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		4187CBAC26D9C294000745EE /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		4187CBAE26D9C62A000745EE /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		4187CBB026D9C733000745EE /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				4187CBA926D9C195000745EE /* CoverImageModel.swift */,
+				4187CBB026D9C733000745EE /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				4187CB9E26D9BE8B000745EE /* VideoListView.swift in Sources */,
 				4187CBA226D9BEAC000745EE /* GalleryView.swift in Sources */,
 				4187CBAD26D9C294000745EE /* CodableBundleExtension.swift in Sources */,
+				4187CBB126D9C733000745EE /* AnimalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
