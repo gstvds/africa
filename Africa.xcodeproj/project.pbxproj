@@ -45,6 +45,7 @@
 		41E0BE6D26DAE1110026200B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE6C26DAE1110026200B /* VideoPlayerView.swift */; };
 		41E0BE7026DAE1DF0026200B /* VideoPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE6F26DAE1DF0026200B /* VideoPlayerUtil.swift */; };
 		41E0BE7226DAE4A50026200B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE7126DAE4A50026200B /* LocationModel.swift */; };
+		41E0BE7426DAE72C0026200B /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE7326DAE72C0026200B /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		41E0BE6C26DAE1110026200B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		41E0BE6F26DAE1DF0026200B /* VideoPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUtil.swift; sourceTree = "<group>"; };
 		41E0BE7126DAE4A50026200B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		41E0BE7326DAE72C0026200B /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				4187CBBC26D9D19C000745EE /* ExternalWeblinkView.swift */,
 				41E0BE6A26DAD9040026200B /* VideoListItemView.swift */,
 				41E0BE6C26DAE1110026200B /* VideoPlayerView.swift */,
+				41E0BE7326DAE72C0026200B /* MapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				4187CB7026D9BB1E000745EE /* AfricaApp.swift in Sources */,
 				4187CBBB26D9CFA4000745EE /* InsetMapView.swift in Sources */,
 				4187CB9E26D9BE8B000745EE /* VideoListView.swift in Sources */,
+				41E0BE7426DAE72C0026200B /* MapAnnotationView.swift in Sources */,
 				41E0BE7026DAE1DF0026200B /* VideoPlayerUtil.swift in Sources */,
 				4187CBA226D9BEAC000745EE /* GalleryView.swift in Sources */,
 				41E0BE6926DAD8AC0026200B /* VideoModel.swift in Sources */,
