@@ -10,6 +10,7 @@ import SwiftUI
 struct VideoListView: View {
     // MARK: - Properties
     @State var videos: [Video] = Bundle.main.decode("videos.json")
+    let hapticImpact = UIImpactFeedbackGenerator(style: .medium)
     
     // MARK: - Body
     var body: some View {
@@ -25,7 +26,9 @@ struct VideoListView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
+                        // Shuffle videos
                         videos.shuffle()
+                        hapticImpact.impactOccurred()
                     }) {
                         Image(systemName: "arrow.2.squarepath")
                     } //: Button
