@@ -9,7 +9,7 @@ import Foundation
 
 extension Bundle {
     // With the underscore we don't have to enter the parameter name on each call of the func
-    func decode<T>(_ file: String) -> [T] where T : Decodable {
+    func decode<T: Codable>(_ file: String) -> [T] {
         // 1. Locate the JSON file
         guard let url = self.url(forResource: file, withExtension: nil) else {
             fatalError("Failed to locale \(file) in bundle")
