@@ -44,6 +44,7 @@
 		41E0BE6B26DAD9040026200B /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE6A26DAD9040026200B /* VideoListItemView.swift */; };
 		41E0BE6D26DAE1110026200B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE6C26DAE1110026200B /* VideoPlayerView.swift */; };
 		41E0BE7026DAE1DF0026200B /* VideoPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE6F26DAE1DF0026200B /* VideoPlayerUtil.swift */; };
+		41E0BE7226DAE4A50026200B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0BE7126DAE4A50026200B /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		41E0BE6A26DAD9040026200B /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		41E0BE6C26DAE1110026200B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		41E0BE6F26DAE1DF0026200B /* VideoPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUtil.swift; sourceTree = "<group>"; };
+		41E0BE7126DAE4A50026200B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				4187CBA926D9C195000745EE /* CoverImageModel.swift */,
 				4187CBB026D9C733000745EE /* AnimalModel.swift */,
 				41E0BE6826DAD8AC0026200B /* VideoModel.swift */,
+				41E0BE7126DAE4A50026200B /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				41E0BE7026DAE1DF0026200B /* VideoPlayerUtil.swift in Sources */,
 				4187CBA226D9BEAC000745EE /* GalleryView.swift in Sources */,
 				41E0BE6926DAD8AC0026200B /* VideoModel.swift in Sources */,
+				41E0BE7226DAE4A50026200B /* LocationModel.swift in Sources */,
 				4187CBAD26D9C294000745EE /* CodableBundleExtension.swift in Sources */,
 				4187CBB726D9CC0D000745EE /* InsetGalleryView.swift in Sources */,
 				4187CBB126D9C733000745EE /* AnimalModel.swift in Sources */,
