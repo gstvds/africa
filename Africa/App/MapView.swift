@@ -23,27 +23,49 @@ struct MapView: View {
     let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
     
     // MARK: - Body
-    var body: some View {
-        // MARK: - Basic Map
-        // Map(coordinateRegion: $region)
-        
-        // MARK: - Advanced Map
+    var body: some View {        
         Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
-            // (A) Pin: Old style (always static)
-            // MapPin(coordinate: item.location, tint: .accentColor)
-            
-            // (B) Marker: New style (always static)
-            // MapMarker(coordinate: item.location, tint: .accentColor)
-            
-            // (C) Custom Basic Annotation (it could be interactive)
             MapAnnotation(coordinate: item.location) {
-                Image("logo")
+                MapAnnotationView(location: item)
+            } //: MapAnnotation
+        }) //: Map
+        .overlay(
+            HStack {
+                Image("compass")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32, alignment: .center)
-            } //: MapAnnotation
-        })
-    }
+                    .frame(width: 48, height: 48, alignment: .center)
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack {
+                        Text("Latitude")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    } //: HStack
+                    HStack {
+                        Text("Longitude")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .foregroundColor(.white)
+                    } //: HStack
+                    Divider()
+                } //: VStack
+            } //: HStack
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
+            .background(Color.black.cornerRadius(8).opacity(0.6))
+            .padding()
+            , alignment: .top
+        ) //: overlay
+    } //: body
 }
 
 // MARK: - Preview
