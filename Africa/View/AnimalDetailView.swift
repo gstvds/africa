@@ -50,6 +50,20 @@ struct AnimalDetailView: View {
                     InsetFactView(animal: animal)
                 } //: Group (Facts)
                 .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                } //: Group (Description)
+                .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                } //: Group (Map)
+                .padding(.horizontal)
             } //: VStack
             .navigationBarTitle("Learn about \(animal.name)", displayMode: .inline)
             
