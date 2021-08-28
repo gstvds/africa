@@ -41,7 +41,14 @@ struct AnimalDetailView: View {
                     HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
 
                     InsetGalleryView(animal: animal)
-                } //: Group
+                } //: Group (Gallery)
+                .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+
+                    InsetFactView(animal: animal)
+                } //: Group (Facts)
                 .padding(.horizontal)
             } //: VStack
             .navigationBarTitle("Learn about \(animal.name)", displayMode: .inline)
