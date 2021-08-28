@@ -62,6 +62,8 @@ struct AnimalDetailView: View {
                 
                 Group {
                     HeadingView(headingImage: "map", headingText: "National Parks")
+                    
+                    InsetMapView()
                 } //: Group (Map)
                 .padding(.horizontal)
             } //: VStack
