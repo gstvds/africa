@@ -12,6 +12,7 @@ struct MotionAnimationView: View {
     @State private var randomCircle = Int.random(in: 12...16)
     @State private var isAnimating: Bool = false
     
+    // MARK: - Functions
     // (1) Random coordinate
     func randomCoordinate(max: CGFloat) -> CGFloat {
         return CGFloat.random(in: 0...max)

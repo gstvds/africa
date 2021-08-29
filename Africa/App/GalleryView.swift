@@ -24,6 +24,7 @@ struct GalleryView: View {
     // let gridLayout: Array<GridItem> = Array(repeating: GridItem(.flexible()), count: 3)
     // Dynamic grid layout
     
+    // MARK: - Functions
     func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
     }

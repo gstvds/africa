@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MapAnnotationView: View {
     // MARK: - Properties
-    var location: NationalParkLocation
     @State private var animation: Double = 0.0
+    var location: NationalParkLocation
     
     // MARK: - Body
     var body: some View {
