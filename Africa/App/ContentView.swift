@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - Properties
     @State private var isGridViewActive: Bool = false
-    let animals: [Animal] = Bundle.main.decode("animals.json")
+    let animals: Array<Animal> = Bundle.main.decode("animals.json")
     let haptics = UIImpactFeedbackGenerator(style: .medium)
+    let gridLayout: Array<GridItem> = Array(repeating: GridItem(.flexible()), count: 2)
     
     // MARK: - Body
     var body: some View {
@@ -30,7 +31,17 @@ struct ContentView: View {
                         } //: ForEach
                     } //: List
                 } else {
-                    Text("")
+                    ScrollView(.vertical, showsIndicators: false) {
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                } //: NavigationLink
+                            } //: ForEach
+                        } //: LazyVGrid
+                        .padding(10)
+                        .animation(.easeIn)
+                    } //: ScrollView
                 } //: Condition
             } //: Group
             .navigationBarTitle("Africa", displayMode: .large)
