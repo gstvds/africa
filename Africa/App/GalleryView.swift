@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct GalleryView: View {
+    
+    // MARK: - Body
     var body: some View {
-        Text("Gallery")
+        ScrollView(.vertical, showsIndicators: false) {
+            
+        } //: ScrollView
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(MotionAnimationView())
     }
 }
 
+// MARK: - Preview
 struct GalleryView_Previews: PreviewProvider {
     static var previews: some View {
         GalleryView()

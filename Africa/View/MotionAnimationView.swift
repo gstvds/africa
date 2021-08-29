@@ -55,6 +55,7 @@ struct MotionAnimationView: View {
                         }) //: onAppear
                 } //: ForEach
             } //: ZStack
+            .drawingGroup()
         } //: GeometryReader
     }
 }
