@@ -9,6 +9,6 @@ import SwiftUI
 
 // Codable to parse JSON, identifiable to use IDs
 struct CoverImage: Codable, Identifiable {
-    let id: Int
-    let name: String
+	let id: Int
+	let name: String
 }
